@@ -1,4 +1,4 @@
-class Project << Backers
+class Project 
   attr_reader :backers
   
   def initialize(backers)
@@ -7,7 +7,7 @@ class Project << Backers
   
    def add_backer(backers)
     @backers << backers
-    @packed_backers << backers
+    backers.add_backer(self) unless project.backers.include?(self)
     
   end
   

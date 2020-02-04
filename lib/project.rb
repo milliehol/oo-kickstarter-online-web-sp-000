@@ -1,4 +1,4 @@
-class Project
+class Project << Backers
   attr_reader :backers
   
   def initialize(backers)

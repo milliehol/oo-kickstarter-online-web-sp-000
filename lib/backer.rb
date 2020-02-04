@@ -1,6 +1,9 @@
 class backer
   attr_reader :backed_projects
   
-  initialize(projects)
+  def initialize(name, genre)
+    @name = name
+    @genre = genre
+  end
   
 end
